@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Inter';
+}
 .container {
   max-width: 1202px;
   margin: 0 auto;
 }
 @import 'header';
+@import 'main';
 @import 'btn';

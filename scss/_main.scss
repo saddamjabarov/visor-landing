@@ -1,0 +1,48 @@
+.main {
+  height: 664px;
+  background-color: rgba(197, 220, 255, 1);
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 588px 633px;
+  }
+  &__text {
+    margin-top: 164px;
+  }
+  &__heading {
+    font-size: 55px;
+    font-weight: 400;
+    color: rgba(4, 1, 23, 1);
+  }
+  &__item {
+    margin-top: 40px;
+  }
+  &__list {
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(66, 69, 94, 1);
+    margin-left: 21px;
+  }
+  &__img {
+    position: relative;
+  }
+  &__btn {
+    &_submit-your-application {
+      display: block;
+      margin: 99px 0 0 77px;
+      width: 180px;
+      height: 60px;
+      font-size: 15px;
+    }
+  }
+}
+.mac-transparent {
+  width: 633px;
+  height: 633px;
+}
+.visor-2 {
+  position: absolute;
+  left: 89px;
+  top: 169px;
+  width: 455px;
+  height: 286px;
+}

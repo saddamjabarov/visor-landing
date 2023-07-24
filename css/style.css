@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter";
+}
+
 .container {
   max-width: 1202px;
   margin: 0 auto;
@@ -42,12 +46,66 @@
   list-style: none;
 }
 .header__btn_demo {
-  background-color: rgb(32, 39, 62);
   width: 100px;
   height: 40px;
+  font-size: 12px;
+}
+
+.main {
+  height: 664px;
+  background-color: rgb(197, 220, 255);
+}
+.main__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 588px 633px;
+  grid-template-columns: 588px 633px;
+}
+.main__text {
+  margin-top: 164px;
+}
+.main__heading {
+  font-size: 55px;
+  font-weight: 400;
+  color: rgb(4, 1, 23);
+}
+.main__item {
+  margin-top: 40px;
+}
+.main__list {
+  font-weight: 300;
+  font-size: 18px;
+  color: rgb(66, 69, 94);
+  margin-left: 21px;
+}
+.main__img {
+  position: relative;
+}
+.main__btn_submit-your-application {
+  display: block;
+  margin: 99px 0 0 77px;
+  width: 180px;
+  height: 60px;
+  font-size: 15px;
+}
+
+.mac-transparent {
+  width: 633px;
+  height: 633px;
+}
+
+.visor-2 {
+  position: absolute;
+  left: 89px;
+  top: 169px;
+  width: 455px;
+  height: 286px;
 }
 
 .btn {
   color: rgb(255, 255, 255);
+  background-color: rgb(32, 39, 62);
+  font-weight: 400;
+  border: none;
   cursor: pointer;
 }
