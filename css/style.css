@@ -146,6 +146,7 @@ body {
   font-size: 55px;
   color: rgb(4, 1, 23);
   text-align: center;
+  text-transform: uppercase;
 }
 .prices__card {
   margin-top: 40px;
