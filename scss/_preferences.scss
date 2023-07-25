@@ -3,7 +3,11 @@
   &__items {
     display: grid;
     grid-template-columns: 599px 599px;
+    column-gap: 24px;
     margin-bottom: 89px;
+  }
+  &__descr {
+    width: 569px;
   }
   &__heading {
     font-weight: 400;

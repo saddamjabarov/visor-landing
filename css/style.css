@@ -115,9 +115,15 @@ body {
 .preferences__items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 599px 599px;
+  -ms-grid-columns: 599px 24px 599px;
   grid-template-columns: 599px 599px;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
   margin-bottom: 89px;
+}
+.preferences__descr {
+  width: 569px;
 }
 .preferences__heading {
   font-weight: 400;
