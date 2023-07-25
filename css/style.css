@@ -128,6 +128,51 @@ body {
   background-color: rgb(197, 220, 255);
 }
 
+.prices__title {
+  font-weight: 400;
+  font-size: 55px;
+  color: rgb(4, 1, 23);
+  text-align: center;
+}
+.prices__card {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.prices__item {
+  width: 282px;
+  height: 435px;
+  background-color: rgb(197, 220, 255);
+}
+.prices__heading {
+  font-weight: 400;
+  font-size: 45px;
+  color: rgb(4, 1, 23);
+  margin-top: 41px;
+  text-align: center;
+}
+.prices__menu {
+  margin-top: 30px;
+}
+.prices__list {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(66, 69, 94);
+  margin-left: 23px;
+}
+.prices__btn_buy-a-subscription {
+  display: block;
+  margin: 0 auto;
+  margin-top: 102px;
+  width: 180px;
+  height: 60px;
+  font-size: 15px;
+}
+
 .btn {
   color: rgb(255, 255, 255);
   background-color: rgb(32, 39, 62);

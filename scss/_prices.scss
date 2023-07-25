@@ -1,0 +1,44 @@
+.prices {
+  &__title {
+    font-weight: 400;
+    font-size: 55px;
+    color: rgba(4, 1, 23, 1);
+    text-align: center;
+  }
+  &__card {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 282px;
+    height: 435px;
+    background-color: rgba(197, 220, 255, 1);
+  }
+  &__heading {
+    font-weight: 400;
+    font-size: 45px;
+    color: rgba(4, 1, 23, 1);
+    margin-top: 41px;
+    text-align: center;
+  }
+  &__menu {
+    margin-top: 30px;
+  }
+  &__list {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(66, 69, 94, 1);
+    margin-left: 23px;
+  }
+  &__btn {
+    &_buy-a-subscription {
+      display: block;
+      margin: 0 auto;
+      margin-top: 102px;
+      width: 180px;
+      height: 60px;
+      font-size: 15px;
+    }
+  }
+}
