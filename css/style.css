@@ -28,13 +28,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__logo {
-  width: 250px;
-  height: 60px;
-  background-color: rgb(32, 39, 62);
-  text-align: center;
-  padding: 8px 0;
-}
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,10 +38,24 @@ body {
   width: 304px;
   list-style: none;
 }
+.header__link {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(66, 69, 94);
+}
 .header__btn_demo {
   width: 100px;
   height: 40px;
   font-size: 12px;
+}
+
+.logo {
+  width: 250px;
+  height: 60px;
+  background-color: rgb(32, 39, 62);
+  text-align: center;
+  padding: 8px 0;
 }
 
 .main {
@@ -171,6 +178,83 @@ body {
   width: 180px;
   height: 60px;
   font-size: 15px;
+}
+
+.contacts {
+  background-color: rgb(197, 220, 255);
+  margin-top: 77px;
+  padding-top: 80px;
+}
+.contacts__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 384px 53px 325px 53px 384px;
+  grid-template-columns: 384px 325px 384px;
+  -webkit-column-gap: 53px;
+     -moz-column-gap: 53px;
+          column-gap: 53px;
+}
+.contacts__img {
+  background-color: #fff;
+}
+.contacts__descr {
+  font-weight: 400;
+}
+.contacts__heading {
+  font-size: 40px;
+  color: rgb(4, 1, 23);
+  margin-bottom: 30px;
+}
+.contacts__sub-heading {
+  font-size: 18px;
+  color: rgb(66, 69, 94);
+}
+.contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 339px;
+}
+.contacts__input {
+  background-color: rgb(197, 220, 255);
+  margin-bottom: 15px;
+  height: 69px;
+  border: 2px solid rgb(157, 157, 157);
+  padding-left: 25px;
+  color: rgb(157, 157, 157);
+  font-size: 18px;
+  font-weight: 400;
+}
+.contacts__btn_form {
+  font-size: 18px;
+  height: 69px;
+}
+
+.footer {
+  background-color: rgb(34, 82, 204);
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__logo {
+  margin: 40px 0;
+}
+.footer__link {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  margin: 60px 0;
+  text-decoration: none;
 }
 
 .btn {
