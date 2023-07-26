@@ -1,46 +1,48 @@
 .contacts {
   background-color: rgba(197, 220, 255, 1);
-  margin-top: 77px;
-  padding-top: 80px;
+  margin-top: 7.7rem;
+  padding-top: 8rem;
   &__container {
     display: grid;
-    grid-template-columns: 384px 325px 384px;
-    column-gap: 53px;
+    grid-template-columns: 38.4rem 32.5rem 38.4rem;
+    column-gap: 5.3rem;
+    padding-bottom: 6.2rem;
   }
   &__img {
     background-color: #fff;
+    height: 32rem;
   }
   &__descr {
     font-weight: 400;
   }
   &__heading {
-    font-size: 40px;
+    font-size: 4rem;
     color: rgba(4, 1, 23, 1);
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
   &__sub-heading {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: rgba(66, 69, 94, 1);
   }
   &__form {
     display: flex;
     flex-direction: column;
-    height: 339px;
+    height: 33.9rem;
   }
   &__input {
     background-color: rgba(197, 220, 255, 1);
-    margin-bottom: 15px;
-    height: 69px;
+    margin-bottom: 1.5rem;
+    height: 6.9rem;
     border: 2px solid rgba(157, 157, 157, 1);
-    padding-left: 25px;
+    padding-left: 2.5rem;
     color: rgba(157, 157, 157, 1);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
   }
   &__btn {
     &_form {
-      font-size: 18px;
-      height: 69px;
+      font-size: 1.8rem;
+      height: 6.9rem;
     }
   }
 }

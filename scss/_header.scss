@@ -1,5 +1,5 @@
 .header {
-  padding: 40px 118px 80px 120px;
+  padding: 4rem 11.8rem 8rem 12rem;
   &__items {
     display: flex;
     justify-content: space-between;
@@ -9,21 +9,22 @@
   &__menu {
     display: flex;
     justify-content: space-between;
-    width: 304px;
+    width: 30.4rem;
     list-style: none;
   }
   &__link {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: rgba(66, 69, 94, 1);
+    scroll-behavior: smooth;
   }
 
   &__btn {
     &_demo {
-      width: 100px;
-      height: 40px;
-      font-size: 12px;
+      width: 10rem;
+      height: 4rem;
+      font-size: 1.2rem;
     }
   }
 }

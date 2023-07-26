@@ -1,27 +1,27 @@
 .preferences {
-  padding-top: 100px;
+  padding-top: 10rem;
   &__items {
     display: grid;
-    grid-template-columns: 599px 599px;
-    column-gap: 24px;
-    margin-bottom: 89px;
+    grid-template-columns: 59.9rem 59.9rem;
+    column-gap: 2.4rem;
+    margin-bottom: 8.9rem;
   }
   &__descr {
-    width: 569px;
+    width: 56.9rem;
   }
   &__heading {
     font-weight: 400;
-    font-size: 40px;
+    font-size: 4rem;
     color: rgba(4, 1, 23, 1);
   }
   &__sub-heading {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 300;
-    margin-top: 40px;
+    margin-top: 4rem;
   }
   &__img {
-    width: 558px;
-    height: 300px;
+    width: 55.8rem;
+    height: 30rem;
     background-color: rgba(197, 220, 255, 1);
   }
 }
