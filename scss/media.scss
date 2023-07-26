@@ -1,0 +1,68 @@
+@media (max-width: 120em) {
+  .main {
+    .visor-2 {
+      left: 7.7rem;
+      top: 15.5rem;
+      width: 42.5rem;
+      height: 26.6rem;
+    }
+    .mac-transparent {
+      width: 58.3rem;
+      height: 58.3rem;
+    }
+    &__heading {
+      font-size: 5.3rem;
+      margin-left: 19px;
+    }
+    &__item {
+      margin-left: 1.6rem;
+    }
+  }
+  .preferences {
+    &__items {
+      grid-template-columns: 55.9rem 55.9rem;
+      column-gap: 3.4rem;
+      margin-left: 2.4rem;
+    }
+    &__heading {
+      font-size: 3.7rem;
+    }
+  }
+
+  .prices {
+    &__card {
+      margin: 0 2rem;
+    }
+    &__title {
+      font-size: 5rem;
+      margin-bottom: 2.7rem;
+    }
+    &__item {
+      width: 27.2rem;
+      height: 37rem;
+    }
+    &__list {
+      font-size: 1.7rem;
+      margin-bottom: 0.6rem;
+    }
+    &__btn {
+      &_buy-a-subscription {
+        margin-top: 7.2rem;
+      }
+    }
+  }
+  .contacts {
+    &__container {
+      column-gap: 3.3rem;
+      margin-left: 2rem;
+    }
+    &__descr {
+      margin-left: 3.4rem;
+    }
+  }
+  .footer {
+    &__wrapper {
+      margin: 0 3rem;
+    }
+  }
+}

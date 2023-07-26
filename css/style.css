@@ -278,3 +278,64 @@ body {
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 120em) {
+  .main .visor-2 {
+    left: 7.7rem;
+    top: 15.5rem;
+    width: 42.5rem;
+    height: 26.6rem;
+  }
+  .main .mac-transparent {
+    width: 58.3rem;
+    height: 58.3rem;
+  }
+  .main__heading {
+    font-size: 5.3rem;
+    margin-left: 19px;
+  }
+  .main__item {
+    margin-left: 1.6rem;
+  }
+  .preferences__items {
+    -ms-grid-columns: 55.9rem 3.4rem 55.9rem;
+    grid-template-columns: 55.9rem 55.9rem;
+    -webkit-column-gap: 3.4rem;
+       -moz-column-gap: 3.4rem;
+            column-gap: 3.4rem;
+    margin-left: 2.4rem;
+  }
+  .preferences__heading {
+    font-size: 3.7rem;
+  }
+  .prices__card {
+    margin: 0 2rem;
+  }
+  .prices__title {
+    font-size: 5rem;
+    margin-bottom: 2.7rem;
+  }
+  .prices__item {
+    width: 27.2rem;
+    height: 37rem;
+  }
+  .prices__list {
+    font-size: 1.7rem;
+    margin-bottom: 0.6rem;
+  }
+  .prices__btn_buy-a-subscription {
+    margin-top: 7.2rem;
+  }
+  .contacts__container {
+    -webkit-column-gap: 3.3rem;
+       -moz-column-gap: 3.3rem;
+            column-gap: 3.3rem;
+    margin-left: 2rem;
+  }
+  .contacts__descr {
+    margin-left: 3.4rem;
+  }
+  .footer__wrapper {
+    margin: 0 3rem;
+  }
+}
