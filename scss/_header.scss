@@ -1,5 +1,5 @@
 .header {
-  padding: 4rem 11.8rem 8rem 12rem;
+  padding: 40px 0 80px 0;
   &__items {
     display: flex;
     justify-content: space-between;
@@ -29,9 +29,9 @@
   }
 }
 .logo {
-  width: 250px;
-  height: 60px;
+  width: 25rem;
+  height: 6rem;
   background-color: rgba(32, 39, 62, 1);
   text-align: center;
-  padding: 8px 0;
+  padding: 0.8rem 0;
 }

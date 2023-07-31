@@ -14,12 +14,13 @@ body {
 }
 
 .container {
-  max-width: 120rem;
+  width: 120rem;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 
 .header {
-  padding: 4rem 11.8rem 8rem 12rem;
+  padding: 40px 0 80px 0;
 }
 .header__items {
   display: -webkit-box;
@@ -56,62 +57,60 @@ body {
 }
 
 .logo {
-  width: 250px;
-  height: 60px;
+  width: 25rem;
+  height: 6rem;
   background-color: rgb(32, 39, 62);
   text-align: center;
-  padding: 8px 0;
+  padding: 0.8rem 0;
 }
 
 .main {
-  height: 66.4rem;
   background-color: rgb(197, 220, 255);
+  height: 66.4rem;
 }
 .main__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 58.8rem 63.3rem;
-  grid-template-columns: 58.8rem 63.3rem;
+  -ms-grid-columns: 50rem 1rem 63.3rem;
+  grid-template-columns: 50rem 63.3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
 }
 .main__text {
-  margin-top: 16.4rem;
+  margin-top: 16.4em;
 }
 .main__heading {
-  font-size: 5.5rem;
+  width: 58.8rem;
   font-weight: 400;
+  font-size: 5.5rem;
   color: rgb(4, 1, 23);
 }
 .main__item {
-  margin-top: 4rem;
+  margin: 4rem 0 0 2.1rem;
 }
 .main__list {
   font-weight: 300;
   font-size: 1.8rem;
   color: rgb(66, 69, 94);
-  margin-left: 2.1rem;
 }
 .main__img {
   position: relative;
 }
-.main__btn_submit-your-application {
-  display: block;
-  margin: 9.9rem 0 0 7.7rem;
-  width: 18rem;
-  height: 6rem;
-  font-size: 1.5rem;
-}
-
-.mac-transparent {
-  width: 63.3rem;
-  height: 63.3rem;
-}
-
-.visor-2 {
+.main .visor-2 {
   position: absolute;
-  left: 8.9rem;
   top: 16.9rem;
+  left: 8.8rem;
   width: 45.5rem;
   height: 28.6rem;
+}
+.main__btn_submit-your-application {
+  width: 18rem;
+  height: 6rem;
+  margin-top: 9.9rem;
 }
 
 .preferences {
@@ -120,15 +119,15 @@ body {
 .preferences__items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 59.9rem 2.4rem 59.9rem;
-  grid-template-columns: 59.9rem 59.9rem;
+  -ms-grid-columns: 58.8rem 2.4rem 58.8rem;
+  grid-template-columns: 58.8rem 58.8rem;
   -webkit-column-gap: 2.4rem;
      -moz-column-gap: 2.4rem;
           column-gap: 2.4rem;
   margin-bottom: 8.9rem;
 }
 .preferences__descr {
-  width: 56.9rem;
+  max-width: 56rem;
 }
 .preferences__heading {
   font-weight: 400;
@@ -139,6 +138,7 @@ body {
   font-size: 1.8rem;
   font-weight: 300;
   margin-top: 4rem;
+  color: rgb(66, 69, 94);
 }
 .preferences__img {
   width: 55.8rem;
@@ -194,34 +194,34 @@ body {
 
 .contacts {
   background-color: rgb(197, 220, 255);
+  height: 48.1rem;
   margin-top: 7.7rem;
-  padding-top: 8rem;
+  padding: 8rem 0 6.2rem 0;
 }
 .contacts__container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 38.4rem 5.3rem 32.5rem 5.3rem 38.4rem;
-  grid-template-columns: 38.4rem 32.5rem 38.4rem;
-  -webkit-column-gap: 5.3rem;
-     -moz-column-gap: 5.3rem;
-          column-gap: 5.3rem;
-  padding-bottom: 6.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .contacts__img {
   background-color: #fff;
-  height: 32rem;
 }
 .contacts__descr {
-  font-weight: 400;
+  margin-left: 5.3rem;
 }
 .contacts__heading {
   font-size: 4rem;
+  font-weight: 400;
   color: rgb(4, 1, 23);
-  margin-bottom: 3rem;
 }
 .contacts__sub-heading {
   font-size: 1.8rem;
+  font-weight: 400;
   color: rgb(66, 69, 94);
+  margin-top: 3rem;
 }
 .contacts__form {
   display: -webkit-box;
@@ -234,18 +234,18 @@ body {
   height: 33.9rem;
 }
 .contacts__input {
+  width: 38.4rem;
+  height: 6.9rem;
+  border: 1px solid rgb(157, 157, 157);
+  color: rgb(66, 69, 94);
+  padding-left: 2.5rem;
   background-color: rgb(197, 220, 255);
   margin-bottom: 1.5rem;
-  height: 6.9rem;
-  border: 2px solid rgb(157, 157, 157);
-  padding-left: 2.5rem;
-  color: rgb(157, 157, 157);
-  font-size: 1.8rem;
-  font-weight: 400;
 }
 .contacts__btn_form {
-  font-size: 1.8rem;
+  width: 38.4rem;
   height: 6.9rem;
+  font-size: 1.8rem;
 }
 
 .footer {
@@ -277,65 +277,4 @@ body {
   font-weight: 400;
   border: none;
   cursor: pointer;
-}
-
-@media (max-width: 120em) {
-  .main .visor-2 {
-    left: 7.7rem;
-    top: 15.5rem;
-    width: 42.5rem;
-    height: 26.6rem;
-  }
-  .main .mac-transparent {
-    width: 58.3rem;
-    height: 58.3rem;
-  }
-  .main__heading {
-    font-size: 5.3rem;
-    margin-left: 19px;
-  }
-  .main__item {
-    margin-left: 1.6rem;
-  }
-  .preferences__items {
-    -ms-grid-columns: 55.9rem 3.4rem 55.9rem;
-    grid-template-columns: 55.9rem 55.9rem;
-    -webkit-column-gap: 3.4rem;
-       -moz-column-gap: 3.4rem;
-            column-gap: 3.4rem;
-    margin-left: 2.4rem;
-  }
-  .preferences__heading {
-    font-size: 3.7rem;
-  }
-  .prices__card {
-    margin: 0 2rem;
-  }
-  .prices__title {
-    font-size: 5rem;
-    margin-bottom: 2.7rem;
-  }
-  .prices__item {
-    width: 27.2rem;
-    height: 37rem;
-  }
-  .prices__list {
-    font-size: 1.7rem;
-    margin-bottom: 0.6rem;
-  }
-  .prices__btn_buy-a-subscription {
-    margin-top: 7.2rem;
-  }
-  .contacts__container {
-    -webkit-column-gap: 3.3rem;
-       -moz-column-gap: 3.3rem;
-            column-gap: 3.3rem;
-    margin-left: 2rem;
-  }
-  .contacts__descr {
-    margin-left: 3.4rem;
-  }
-  .footer__wrapper {
-    margin: 0 3rem;
-  }
 }

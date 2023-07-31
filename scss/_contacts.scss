@@ -1,28 +1,28 @@
 .contacts {
   background-color: rgba(197, 220, 255, 1);
+  height: 48.1rem;
   margin-top: 7.7rem;
-  padding-top: 8rem;
+  padding: 8rem 0 6.2rem 0;
   &__container {
-    display: grid;
-    grid-template-columns: 38.4rem 32.5rem 38.4rem;
-    column-gap: 5.3rem;
-    padding-bottom: 6.2rem;
+    display: flex;
+    justify-content: space-between;
   }
   &__img {
     background-color: #fff;
-    height: 32rem;
   }
   &__descr {
-    font-weight: 400;
+    margin-left: 5.3rem;
   }
   &__heading {
     font-size: 4rem;
+    font-weight: 400;
     color: rgba(4, 1, 23, 1);
-    margin-bottom: 3rem;
   }
   &__sub-heading {
     font-size: 1.8rem;
+    font-weight: 400;
     color: rgba(66, 69, 94, 1);
+    margin-top: 3rem;
   }
   &__form {
     display: flex;
@@ -30,19 +30,17 @@
     height: 33.9rem;
   }
   &__input {
+    width: 38.4rem;
+    height: 6.9rem;
+    border: 1px solid rgba(157, 157, 157, 1);
+    color: rgba(66, 69, 94, 1);
+    padding-left: 2.5rem;
     background-color: rgba(197, 220, 255, 1);
     margin-bottom: 1.5rem;
-    height: 6.9rem;
-    border: 2px solid rgba(157, 157, 157, 1);
-    padding-left: 2.5rem;
-    color: rgba(157, 157, 157, 1);
-    font-size: 1.8rem;
-    font-weight: 400;
   }
-  &__btn {
-    &_form {
-      font-size: 1.8rem;
-      height: 6.9rem;
-    }
+  &__btn_form {
+    width: 38.4rem;
+    height: 6.9rem;
+    font-size: 1.8rem;
   }
 }
