@@ -54,5 +54,15 @@
       font-size: 1.7rem;
       line-height: 1.4;
     }
+    &__btn {
+      &_buy-a-subscription {
+        margin-top: 7.7rem;
+      }
+    }
+  }
+  .contacts {
+    &__descr {
+      margin-left: 3.3rem;
+    }
   }
 }

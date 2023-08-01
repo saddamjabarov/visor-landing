@@ -330,4 +330,10 @@ body {
     font-size: 1.7rem;
     line-height: 1.4;
   }
+  .prices__btn_buy-a-subscription {
+    margin-top: 7.7rem;
+  }
+  .contacts__descr {
+    margin-left: 3.3rem;
+  }
 }
