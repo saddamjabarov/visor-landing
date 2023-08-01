@@ -389,4 +389,20 @@ body {
     line-height: 1.8;
     margin-left: 2rem;
   }
+  .prices__btn_buy-a-subscription {
+    width: 15rem;
+    height: 5rem;
+  }
+  .contacts__img {
+    height: 22.2rem;
+  }
+  .contacts__img-contacts {
+    width: 25rem;
+  }
+  .contacts__heading {
+    font-size: 3.5rem;
+  }
+  .contacts__sub-heading {
+    font-size: 1.7rem;
+  }
 }

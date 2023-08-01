@@ -124,5 +124,25 @@
       line-height: 1.8;
       margin-left: 2rem;
     }
+    &__btn {
+      &_buy-a-subscription {
+        width: 15rem;
+        height: 5rem;
+      }
+    }
+  }
+  .contacts {
+    &__img {
+      height: 22.2rem;
+    }
+    &__img-contacts {
+      width: 25rem;
+    }
+    &__heading {
+      font-size: 3.5rem;
+    }
+    &__sub-heading {
+      font-size: 1.7rem;
+    }
   }
 }
