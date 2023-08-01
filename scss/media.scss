@@ -111,4 +111,18 @@
       font-size: 3rem;
     }
   }
+  .prices {
+    &__item {
+      width: 23.2rem;
+      height: 38rem;
+    }
+    &__title {
+      font-size: 5rem;
+    }
+    &__list {
+      font-size: 1.4rem;
+      line-height: 1.8;
+      margin-left: 2rem;
+    }
+  }
 }
