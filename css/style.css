@@ -296,4 +296,20 @@ body {
     width: 36rem;
     height: 23rem;
   }
+  .preferences__items {
+    -ms-grid-columns: 50.8rem 50.8rem;
+    grid-template-columns: 50.8rem 50.8rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .preferences__img {
+    width: 49.9rem;
+  }
+  .preferences__text {
+    width: 48rem;
+  }
+  .preferences__heading {
+    font-size: 3.5rem;
+  }
 }

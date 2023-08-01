@@ -18,4 +18,19 @@
       height: 23rem;
     }
   }
+  .preferences {
+    &__items {
+      grid-template-columns: 50.8rem 50.8rem;
+      justify-content: space-between;
+    }
+    &__img {
+      width: 49.9rem;
+    }
+    &__text {
+      width: 48rem;
+    }
+    &__heading {
+      font-size: 3.5rem;
+    }
+  }
 }
