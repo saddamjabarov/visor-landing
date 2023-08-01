@@ -296,6 +296,9 @@ body {
     width: 36rem;
     height: 23rem;
   }
+  .main__btn_submit-your-application {
+    margin-left: 2.2rem;
+  }
   .preferences__items {
     -ms-grid-columns: 50.8rem 50.8rem;
     grid-template-columns: 50.8rem 50.8rem;
@@ -306,10 +309,25 @@ body {
   .preferences__img {
     width: 49.9rem;
   }
+  .preferences__descr {
+    max-width: 48rem;
+  }
   .preferences__text {
     width: 48rem;
   }
   .preferences__heading {
     font-size: 3.5rem;
+  }
+  .preferences__sub-heading {
+    font-size: 1.9rem;
+    line-height: 1.4;
+  }
+  .prices__item {
+    width: 27.2rem;
+    height: 40rem;
+  }
+  .prices__list {
+    font-size: 1.7rem;
+    line-height: 1.4;
   }
 }

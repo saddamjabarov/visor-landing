@@ -17,6 +17,11 @@
       width: 36rem;
       height: 23rem;
     }
+    &__btn {
+      &_submit-your-application {
+        margin-left: 2.2rem;
+      }
+    }
   }
   .preferences {
     &__items {
@@ -26,11 +31,28 @@
     &__img {
       width: 49.9rem;
     }
+    &__descr {
+      max-width: 48rem;
+    }
     &__text {
       width: 48rem;
     }
     &__heading {
       font-size: 3.5rem;
+    }
+    &__sub-heading {
+      font-size: 1.9rem;
+      line-height: 1.4;
+    }
+  }
+  .prices {
+    &__item {
+      width: 27.2rem;
+      height: 40rem;
+    }
+    &__list {
+      font-size: 1.7rem;
+      line-height: 1.4;
     }
   }
 }
