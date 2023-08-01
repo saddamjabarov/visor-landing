@@ -73,12 +73,19 @@
 }
 @media (max-width: 99.2em) {
   .main {
+    &__wrapper {
+      grid-template-columns: 44rem 46.3rem;
+    }
+
     &__heading {
       width: 42.8rem;
       font-size: 4rem;
     }
     &__img {
       margin-top: 6.2rem;
+    }
+    &__list {
+      line-height: 1.5;
     }
     .mac-transparent {
       width: 45rem;
@@ -88,6 +95,20 @@
       left: 6rem;
       width: 32.6rem;
       height: 21rem;
+    }
+  }
+  .preferences {
+    &__items {
+      grid-template-columns: 40.8rem 40.8rem;
+    }
+    &__img {
+      width: 40.9rem;
+    }
+    &__descr {
+      max-width: 40rem;
+    }
+    &__heading {
+      font-size: 3rem;
     }
   }
 }
