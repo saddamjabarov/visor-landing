@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 120rem;
+  max-width: 120rem;
   padding: 0 1rem;
   margin: 0 auto;
 }
@@ -86,7 +86,7 @@ body {
 .main__heading {
   width: 58.8rem;
   font-weight: 400;
-  font-size: 5.5rem;
+  font-size: 5rem;
   color: rgb(4, 1, 23);
 }
 .main__item {
@@ -277,4 +277,23 @@ body {
   font-weight: 400;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 120em) {
+  .header__items {
+    padding: 0 3.2rem;
+  }
+  .main__wrapper {
+    -ms-grid-columns: 50rem 50.3rem;
+    grid-template-columns: 50rem 50.3rem;
+  }
+  .main .mac-transparent {
+    width: 500px;
+  }
+  .main .visor-2 {
+    top: 12.9rem;
+    left: 6.8rem;
+    width: 36rem;
+    height: 23rem;
+  }
 }

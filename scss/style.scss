@@ -11,10 +11,11 @@ body {
   font-family: 'Inter';
 }
 .container {
-  width: 120rem;
+  max-width: 120rem;
   padding: 0 1rem;
   margin: 0 auto;
 }
+
 @import 'header';
 @import 'main';
 @import 'preferences';
