@@ -6,9 +6,11 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: 'Inter';
+  overflow-x: hidden;
 }
 .container {
   max-width: 120rem;
@@ -23,4 +25,5 @@ body {
 @import 'contacts';
 @import 'footer';
 @import 'btn';
+@import 'menu';
 @import 'media';

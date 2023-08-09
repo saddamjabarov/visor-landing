@@ -71,30 +71,44 @@
     }
   }
 }
-@media (max-width: 99.2em) {
+@media (max-width: 70em) {
+  .header {
+    .logo {
+      width: 21rem;
+    }
+
+    &__menu {
+      margin: 0 auto;
+    }
+  }
   .main {
     &__wrapper {
-      grid-template-columns: 44rem 46.3rem;
+      grid-template-columns: 40rem 40.3rem;
     }
 
     &__heading {
-      width: 42.8rem;
-      font-size: 4rem;
+      width: 39.8rem;
+      font-size: 3.7rem;
     }
     &__img {
-      margin-top: 6.2rem;
+      margin-top: 8.2rem;
     }
     &__list {
       line-height: 1.5;
     }
+    &__btn {
+      &_submit-your-application {
+        margin-left: 7.2rem;
+      }
+    }
     .mac-transparent {
-      width: 45rem;
+      width: 40rem;
     }
     .visor-2 {
-      top: 11.9rem;
-      left: 6rem;
-      width: 32.6rem;
-      height: 21rem;
+      top: 10.5rem;
+      left: 5.7rem;
+      width: 28.5rem;
+      height: 18.5rem;
     }
   }
   .preferences {
@@ -113,7 +127,7 @@
   }
   .prices {
     &__item {
-      width: 23.2rem;
+      width: 21.2rem;
       height: 38rem;
     }
     &__title {
@@ -121,8 +135,9 @@
     }
     &__list {
       font-size: 1.4rem;
-      line-height: 1.8;
-      margin-left: 2rem;
+      line-height: 1.9;
+      margin-left: 1rem;
+      list-style-type: none;
     }
     &__btn {
       &_buy-a-subscription {
@@ -143,6 +158,372 @@
     }
     &__sub-heading {
       font-size: 1.7rem;
+    }
+    &__input {
+      margin-left: 32px;
+      width: 31.4rem;
+      height: 6rem;
+    }
+    &__btn {
+      &_form {
+        margin-left: 32px;
+        width: 31.4rem;
+        height: 6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 59em) {
+  .header {
+    .logo {
+      width: 16rem;
+    }
+    &__menu {
+      margin: 0 auto;
+    }
+  }
+  .main {
+    &__wrapper {
+      padding: 0 1rem;
+      grid-template-columns: 33rem 34.3rem;
+    }
+    &__heading {
+      font-size: 3.2rem;
+    }
+    &__item {
+      margin-top: 3.2rem;
+    }
+    &__list {
+      line-height: 1.7;
+    }
+    &__btn {
+      &_submit-your-application {
+        margin-top: 5.2rem;
+      }
+    }
+    .mac-transparent {
+      width: 34rem;
+    }
+    .visor-2 {
+      top: 9rem;
+      left: 4.6rem;
+      width: 24.5rem;
+      height: 16rem;
+    }
+  }
+  .preferences {
+    margin-left: 0.9rem;
+    &__items {
+      grid-template-columns: 30.8rem 34.8rem;
+      display: flex;
+      justify-content: center;
+    }
+    &__img {
+      width: 30.3rem;
+    }
+    &__descr {
+      max-width: 33rem;
+    }
+    &__heading {
+      font-size: 2rem;
+    }
+    &__sub-heading {
+      margin-top: 2rem;
+      font-size: 1.8rem;
+    }
+  }
+  .prices {
+    margin: 0 auto;
+    &__card {
+      display: grid;
+      grid-template-columns: repeat(2, 283px);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 3.6rem;
+      column-gap: 4.1rem;
+      justify-content: center;
+    }
+    &__item {
+      width: 27.2rem;
+    }
+    &__list {
+      text-align: center;
+      font-size: 1.6rem;
+    }
+  }
+  .contacts {
+    &__heading {
+      font-size: 2.5rem;
+    }
+    &__input {
+      width: 24.8rem;
+    }
+    &__btn {
+      &_form {
+        width: 23.5rem;
+      }
+    }
+    &__img-contacts {
+      width: 21rem;
+      height: 100%;
+    }
+    &__input {
+      width: 23.5rem;
+    }
+  }
+  .footer {
+    &__logo {
+      width: 16rem;
+    }
+  }
+}
+@media (max-width: 44em) {
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .header {
+    &__nav {
+      z-index: 1000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(250, 250, 250, 0.97);
+      transform: translateX(100%);
+      transition: all 0.5s ease-in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+    &__menu {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__btn {
+      &_demo {
+        display: none;
+      }
+    }
+  }
+  .nav-open {
+    .header__nav {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+    }
+    .icon-mobile-nav[name='close-outline'] {
+      display: block;
+    }
+    .icon-mobile-nav[name='menu-outline'] {
+      display: none;
+    }
+  }
+
+  .main {
+    &__wrapper {
+      margin: 0 auto;
+      grid-template-rows: repeat(2, 1fr);
+      margin-left: 17rem;
+    }
+    &__img {
+      margin-top: 5.2rem;
+    }
+    &__text {
+      margin-top: -6rem;
+      grid-row: 2;
+    }
+
+    &__item {
+      margin-top: 1rem;
+    }
+    &__list {
+      line-height: 1.6;
+    }
+    &__btn {
+      &_submit-your-application {
+        width: 14rem;
+        height: 4rem;
+        margin-top: 1.9rem;
+      }
+    }
+
+    .mac-transparent {
+      width: 31rem;
+      margin-top: -5rem;
+    }
+    .visor-2 {
+      top: 3rem;
+      left: 3.7rem;
+      width: 23.3rem;
+      height: 14.5rem;
+    }
+  }
+  .preferences {
+    &__img {
+      width: 29.5rem;
+    }
+    &__descr {
+      max-width: 29rem;
+    }
+  }
+  .contacts {
+    padding: 0;
+    &__img {
+      display: none;
+    }
+    &__container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__descr {
+      width: 431px;
+    }
+    &__heading {
+      padding-top: 5px;
+      font-size: 4rem;
+    }
+    &__sub-heading {
+      font-size: 2.2rem;
+      margin-top: 1rem;
+    }
+    &__form {
+      margin-top: 3.5rem;
+    }
+    &__input {
+      width: 40.8rem;
+      margin-left: 8.3rem;
+      font-size: 2rem;
+    }
+    &__btn {
+      &_form {
+        width: 40.8rem;
+        margin-left: 8.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 34em) {
+  .main {
+    &__wrapper {
+      margin-left: 8rem;
+      grid-template-columns: 26rem 26.3rem;
+    }
+    &__img {
+      height: 100%;
+    }
+    &__text {
+      margin-top: -3.5rem;
+    }
+    &__list {
+      font-size: 1.5rem;
+    }
+    .mac-transparent {
+      position: absolute;
+      top: -2.2rem;
+      left: 0;
+    }
+    .visor-2 {
+      top: 1rem;
+    }
+  }
+  .preferences {
+    position: relative;
+    padding-top: 4.5rem;
+    margin: 0 auto;
+    &__wrapper {
+      width: 500px;
+      min-height: 53.5rem;
+      margin: 0 auto;
+    }
+    &__track {
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 500px;
+    }
+
+    &__items {
+      display: none;
+      margin-left: 10rem;
+      width: 500px;
+      height: 450px;
+    }
+    .active {
+      display: block;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    &__img {
+      width: 25.5rem;
+      height: 100%;
+      order: 1;
+    }
+
+    &__descr {
+      margin-top: 1rem;
+      order: 2;
+    }
+    .dots {
+      position: absolute;
+      left: 50%;
+      bottom: 7.3rem;
+      transform: translate(-50%, 32px);
+      display: flex;
+      gap: 12px;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      background-color: #fff;
+      border: 2px solid #000;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .dot--fill {
+      background-color: grey;
+    }
+  }
+  .prices {
+    &__card {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10rem;
+    }
+    &__title {
+      font-size: 3.9rem;
+    }
+  }
+  .contacts {
+    &__heading {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+    &__sub-heading {
+      font-size: 2rem;
+      // margin-left: 3.5rem;
+      text-align: center;
+    }
+    &__form {
+      margin-right: 6.5rem;
+    }
+    &__input {
+      width: 34.4rem;
+    }
+    &__btn {
+      &_form {
+        width: 34.4rem;
+        text-align: center;
+      }
     }
   }
 }

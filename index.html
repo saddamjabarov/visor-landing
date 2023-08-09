@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header nav-open">
       <div class="container">
         <div class="header__items">
           <div class="logo">
@@ -22,12 +22,20 @@
                 class="logo__img"
             /></a>
           </div>
-          <ul class="header__menu">
-            <li><a href="#main" class="header__link">О нас</a></li>
-            <li><a href="#preferences" class="header__link">Возможности</a></li>
-            <li><a href="#prices" class="header__link">Цены</a></li>
-          </ul>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li><a href="#main" class="header__link">О нас</a></li>
+              <li>
+                <a href="#preferences" class="header__link">Возможности</a>
+              </li>
+              <li><a href="#prices" class="header__link">Цены</a></li>
+            </ul>
+          </nav>
           <button class="btn header__btn_demo">Начать Demo</button>
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
         </div>
       </div>
     </header>
@@ -65,95 +73,113 @@
     </section>
     <section class="preferences" id="preferences">
       <div class="container">
-        <div class="preferences__items">
-          <div class="preferences__img"></div>
-          <div class="preferences__descr">
-            <div class="preferences__heading">
-              Кастомизация <br />
-              подразделений под ваш бизнес
+        <div class="preferences__wrapper">
+          <div class="preferences__track">
+            <!-- <div class="preferences__items active">
+              <div class="preferences__img"></div>
+              <div class="preferences__descr">
+                <div class="preferences__heading">
+                  Кастомизация <br />
+                  подразделений под ваш бизнес
+                </div>
+                <div class="preferences__sub-heading">
+                  Вы сможете самостоятельно создавать свои офисы, склады, точки
+                  продаж или сервиса и назначать сотрудников. Для начала работы
+                  достаточно добавить сотрудника и передать логин и пароль
+                </div>
+              </div>
+            </div> -->
+            <div class="preferences__items active">
+              <div class="preferences__descr">
+                <div class="preferences__heading">Автоматизация отчетности</div>
+                <div class="preferences__sub-heading">
+                  Вы сможете самостоятельно создавать свои офисы, склады, <br />
+                  точки продаж или сервиса и назначать сотрудников. Для начала
+                  работы достаточно добавить сотрудника и передать логин и
+                  пароль
+                </div>
+              </div>
+              <div class="preferences__img"></div>
             </div>
-            <div class="preferences__sub-heading">
-              Вы сможете самостоятельно создавать свои офисы, склады, точки
-              продаж или сервиса и назначать сотрудников. Для начала работы
-              достаточно добавить сотрудника и передать логин и пароль
+            <div class="preferences__items">
+              <div class="preferences__img"></div>
+              <div class="preferences__descr">
+                <div class="preferences__heading">Ведение бухгалтерии</div>
+                <div class="preferences__sub-heading">
+                  Режим бухгалтера позволяет бухгалтеру контролировать ваш
+                  бизнес, подтверждать или отклонять все операции в ваших
+                  подразделениях и вести бухучёт в соответствии с ними
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="preferences__items">
-          <div class="preferences__descr">
-            <div class="preferences__heading">Автоматизация отчетности</div>
-            <div class="preferences__sub-heading">
-              Вы сможете самостоятельно создавать свои офисы, склады, <br />
-              точки продаж или сервиса и назначать сотрудников. Для начала
-              работы достаточно добавить сотрудника и передать логин и пароль
+            <div class="preferences__items">
+              <div class="preferences__descr">
+                <div class="preferences__heading">
+                  Доступ с любых девайсов <br />24/7
+                </div>
+                <div class="preferences__sub-heading">
+                  Веб-приложение доступно с любой точки мира и любого девайса
+                  <br />
+                  с доступом в интернет. Оно очень легкое и нетребовательно к
+                  оборудованию, что позволяет вести бизнес как с планшетов и
+                  смартфонов, так и с компьютеров
+                </div>
+              </div>
+              <div class="preferences__img"></div>
             </div>
-          </div>
-          <div class="preferences__img"></div>
-        </div>
-        <div class="preferences__items">
-          <div class="preferences__img"></div>
-          <div class="preferences__descr">
-            <div class="preferences__heading">Ведение бухгалтерии</div>
-            <div class="preferences__sub-heading">
-              Режим бухгалтера позволяет бухгалтеру контролировать ваш бизнес,
-              подтверждать или отклонять все операции в ваших подразделениях и
-              вести бухучёт в соответствии с ними
+            <div class="preferences__items">
+              <div class="preferences__img"></div>
+              <div class="preferences__descr">
+                <div class="preferences__heading">
+                  Онлайн система складирования
+                </div>
+                <div class="preferences__sub-heading">
+                  Создавайте склады, контролируйте запас товаров в офисах и
+                  подразделениях – всё в лучших традициях складского учёта/для
+                  облегчения ведения складского учета для вашего бизнеса
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="preferences__items">
-          <div class="preferences__descr">
-            <div class="preferences__heading">
-              Доступ с любых девайсов <br />24/7
+            <div class="preferences__items">
+              <div class="preferences__descr">
+                <div class="preferences__heading">
+                  Упрощённая кадровая система
+                </div>
+                <div class="preferences__sub-heading">
+                  Вы можете создавать любые роли под позиции для ваших
+                  сотрудников и самостоятельно передавать им полномочия и
+                  доступы к действиям, операциям и отчетам
+                </div>
+              </div>
+              <div class="preferences__img"></div>
             </div>
-            <div class="preferences__sub-heading">
-              Веб-приложение доступно с любой точки мира и любого девайса <br />
-              с доступом в интернет. Оно очень легкое и нетребовательно к
-              оборудованию, что позволяет вести бизнес как с планшетов и
-              смартфонов, так и с компьютеров
+            <div class="preferences__items">
+              <div class="preferences__img"></div>
+              <div class="preferences__descr">
+                <div class="preferences__heading">
+                  Система бонусов для сотрудников
+                </div>
+                <div class="preferences__sub-heading">
+                  Business VISOR позволяет включать систему бонусов для
+                  сотрудников, при котором вы можете назначить % от продаж для
+                  сотрудников на каждый товар, который будет копиться, а ваши
+                  сотрудники смогут мониторить свой бонус и будут более
+                  мотивированы
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="preferences__img"></div>
-        </div>
-        <div class="preferences__items">
-          <div class="preferences__img"></div>
-          <div class="preferences__descr">
-            <div class="preferences__heading">Онлайн система складирования</div>
-            <div class="preferences__sub-heading">
-              Создавайте склады, контролируйте запас товаров в офисах и
-              подразделениях – всё в лучших традициях складского учёта/для
-              облегчения ведения складского учета для вашего бизнеса
-            </div>
-          </div>
-        </div>
-        <div class="preferences__items">
-          <div class="preferences__descr">
-            <div class="preferences__heading">Упрощённая кадровая система</div>
-            <div class="preferences__sub-heading">
-              Вы можете создавать любые роли под позиции для ваших сотрудников и
-              самостоятельно передавать им полномочия и доступы к действиям,
-              операциям и отчетам
-            </div>
-          </div>
-          <div class="preferences__img"></div>
-        </div>
-        <div class="preferences__items">
-          <div class="preferences__img"></div>
-          <div class="preferences__descr">
-            <div class="preferences__heading">
-              Система бонусов для сотрудников
-            </div>
-            <div class="preferences__sub-heading">
-              Business VISOR позволяет включать систему бонусов для сотрудников,
-              при котором вы можете назначить % от продаж для сотрудников на
-              каждый товар, который будет копиться, а ваши сотрудники смогут
-              мониторить свой бонус и будут более мотивированы
+            <div class="dots">
+              <button class="dot dot--fill">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
+              <button class="dot">&nbsp;</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <section class="prices" id="prices">
       <div class="container">
         <div class="prices__title">план подписки</div>
@@ -246,7 +272,7 @@
         </div>
       </div>
     </section>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__logo logo">
@@ -259,7 +285,8 @@
           </div>
         </div>
       </div>
-    </footer>  -->
+    </footer>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <script src="script/script.js"></script>
   </body>
 </html>
