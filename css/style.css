@@ -638,7 +638,7 @@ body {
     margin: 0 auto;
     -ms-grid-rows: (1fr)[2];
     grid-template-rows: repeat(2, 1fr);
-    margin-left: 17rem;
+    margin-left: 9rem;
   }
   .main__img {
     margin-top: 5.2rem;
@@ -674,6 +674,39 @@ body {
   }
   .preferences__descr {
     max-width: 29rem;
+  }
+  .prices {
+    margin: 0 auto;
+  }
+  .prices__card {
+    padding: 0 2rem;
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 3.4rem 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    row-gap: 3.4rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .prices__card > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .prices__card > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .prices__card > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .prices__card > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
   }
   .contacts {
     padding: 0;
@@ -719,7 +752,7 @@ body {
 }
 @media (max-width: 34em) {
   .main__wrapper {
-    margin-left: 8rem;
+    margin-left: 6rem;
     -ms-grid-columns: 26rem 26.3rem;
     grid-template-columns: 26rem 26.3rem;
   }
@@ -819,7 +852,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 10rem;
+    margin-left: 7rem;
   }
   .prices__title {
     font-size: 3.9rem;
@@ -841,5 +874,88 @@ body {
   .contacts__btn_form {
     width: 34.4rem;
     text-align: center;
+  }
+}
+@media (max-width: 28em) {
+  .header {
+    padding: 40px 0 40px 0;
+  }
+  .header .logo {
+    width: 13rem;
+  }
+  .main__wrapper {
+    max-width: 435px;
+    -ms-grid-columns: 14rem 16.3rem;
+    grid-template-columns: 14rem 16.3rem;
+    margin-left: 2.4rem;
+  }
+  .main__text {
+    margin-top: -8.9rem;
+    width: 30rem;
+  }
+  .main__heading {
+    font-size: 2.8rem;
+  }
+  .main__list {
+    font-size: 1.7rem;
+  }
+  .main__btn_submit-your-application {
+    margin-top: 5rem;
+  }
+  .main .mac-transparent {
+    width: 27rem;
+  }
+  .main .visor-2 {
+    top: 0;
+    left: 3.7rem;
+    width: 19.7rem;
+    height: 12.5rem;
+  }
+  .preferences__wrapper {
+    width: 31.8rem;
+    margin-left: -3.8rem;
+  }
+  .prices__title {
+    font-size: 3.5rem;
+  }
+  .prices__card {
+    margin-left: 3.9rem;
+  }
+  .contacts__descr {
+    width: 31rem;
+    margin-left: 0.2rem;
+  }
+  .contacts__heading {
+    font-size: 3rem;
+  }
+  .contacts__sub-heading {
+    font-size: 1.8rem;
+  }
+  .contacts__input {
+    width: 31rem;
+    margin-left: 7rem;
+  }
+  .contacts__btn_form {
+    width: 31rem;
+    margin-left: 7rem;
+  }
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__link {
+    margin: 0;
+    margin-bottom: 15px;
   }
 }

@@ -329,7 +329,7 @@
     &__wrapper {
       margin: 0 auto;
       grid-template-rows: repeat(2, 1fr);
-      margin-left: 17rem;
+      margin-left: 9rem;
     }
     &__img {
       margin-top: 5.2rem;
@@ -370,6 +370,17 @@
     }
     &__descr {
       max-width: 29rem;
+    }
+  }
+  .prices {
+    margin: 0 auto;
+    &__card {
+      padding: 0 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      column-gap: 10px;
+      row-gap: 3.4rem;
+      justify-content: center;
     }
   }
   .contacts {
@@ -413,7 +424,7 @@
 @media (max-width: 34em) {
   .main {
     &__wrapper {
-      margin-left: 8rem;
+      margin-left: 6rem;
       grid-template-columns: 26rem 26.3rem;
     }
     &__img {
@@ -497,7 +508,7 @@
     &__card {
       display: flex;
       flex-direction: column;
-      margin-left: 10rem;
+      margin-left: 7rem;
     }
     &__title {
       font-size: 3.9rem;
@@ -510,7 +521,6 @@
     }
     &__sub-heading {
       font-size: 2rem;
-      // margin-left: 3.5rem;
       text-align: center;
     }
     &__form {
@@ -524,6 +534,94 @@
         width: 34.4rem;
         text-align: center;
       }
+    }
+  }
+}
+
+@media (max-width: 28em) {
+  .header {
+    padding: 40px 0 40px 0;
+    .logo {
+      width: 13rem;
+    }
+  }
+  .main {
+    &__wrapper {
+      max-width: 435px;
+      grid-template-columns: 14rem 16.3rem;
+      margin-left: 2.4rem;
+    }
+    &__text {
+      margin-top: -8.9rem;
+      width: 30rem;
+    }
+    &__heading {
+      font-size: 2.8rem;
+    }
+    &__list {
+      font-size: 1.7rem;
+    }
+    &__btn {
+      &_submit-your-application {
+        margin-top: 5rem;
+      }
+    }
+    .mac-transparent {
+      width: 27rem;
+    }
+    .visor-2 {
+      top: 0;
+      left: 3.7rem;
+      width: 19.7rem;
+      height: 12.5rem;
+    }
+  }
+  .preferences {
+    &__wrapper {
+      width: 31.8rem;
+      margin-left: -3.8rem;
+    }
+  }
+  .prices {
+    &__title {
+      font-size: 3.5rem;
+    }
+    &__card {
+      margin-left: 3.9rem;
+    }
+  }
+  .contacts {
+    &__descr {
+      width: 31rem;
+      margin-left: 0.2rem;
+    }
+    &__heading {
+      font-size: 3rem;
+    }
+    &__sub-heading {
+      font-size: 1.8rem;
+    }
+    &__input {
+      width: 31rem;
+      margin-left: 7rem;
+    }
+    &__btn {
+      &_form {
+        width: 31rem;
+        margin-left: 7rem;
+      }
+    }
+  }
+  .footer {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__link {
+      margin: 0;
+      margin-bottom: 15px;
     }
   }
 }
