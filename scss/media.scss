@@ -546,7 +546,9 @@
     }
   }
   .main {
+    max-width: 448px;
     &__wrapper {
+      margin: 0 auto;
       max-width: 435px;
       grid-template-columns: 14rem 16.3rem;
       margin-left: 2.4rem;

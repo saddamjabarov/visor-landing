@@ -37,7 +37,7 @@ body {
           align-items: center;
 }
 .header__nav {
-  width: 36.5rem;
+  width: 43.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +55,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30.4rem;
+  gap: 3.5rem;
   list-style: none;
 }
 .header__link {
@@ -63,11 +63,6 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   color: rgb(66, 69, 94);
-}
-.header__btn_demo {
-  width: 10rem;
-  height: 4rem;
-  font-size: 1.2rem;
 }
 
 .logo {
@@ -883,7 +878,11 @@ body {
   .header .logo {
     width: 13rem;
   }
+  .main {
+    max-width: 448px;
+  }
   .main__wrapper {
+    margin: 0 auto;
     max-width: 435px;
     -ms-grid-columns: 14rem 16.3rem;
     grid-template-columns: 14rem 16.3rem;
