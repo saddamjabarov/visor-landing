@@ -1,3 +1,5 @@
+// const e = require('cors');
+
 const allLinks = document.querySelectorAll('a:link');
 
 allLinks.forEach(function (link) {
@@ -23,7 +25,6 @@ allLinks.forEach(function (link) {
 const btnNavEl = document.querySelector('.btn-mobile-nav');
 const headerEl = document.querySelector('.header');
 const headerLink = document.querySelectorAll('.header__link');
-console.log(btnNavEl, headerEl);
 btnNavEl.addEventListener('click', function () {
   headerEl.classList.toggle('nav-open');
 });
@@ -59,3 +60,13 @@ function updateContent() {
   dot[index].classList.add('dot--fill');
 }
 updateContent();
+
+const request = 'https://visor.business/visor_v2/requests';
+
+const postRequest = function (url) {
+  fetch(url, { method: 'POST' }, 'no-cors')
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error(error));
+};
+postRequest(request);
